@@ -6,17 +6,18 @@ class Reservation {
     private $SeatsPerRow = 7;
     private $SeatsPerLastRow = 3;
     private $db;
+    private $dbname="reservation";
 
     public function __construct() {
-        $this->db = new mysqli('localhost', 'root', '', 'reservation');
+        $this->db = new mysqli('localhost', 'root', '', $this->dbname);
         if ($this->db->connect_error) {
             die("Connection failed: " . $this->db->connect_error);
 
         }
-        $this->db->query("CREATE DATABASE IF NOT EXISTS $this->db");
+        $this->db->query("CREATE DATABASE IF NOT EXISTS". $this->dbname);
         $query = "CREATE TABLE IF NOT EXISTS seating (
     	block INT PRIMARY KEY AUTO_INCREMENT,
-    	seat INT DEFAULT 0 CHECK (seat >= 0 AND seat <= 7)";
+    	seat INT DEFAULT 0)";
     	$this->db->query($query);
 
     }
