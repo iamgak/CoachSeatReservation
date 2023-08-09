@@ -13,6 +13,12 @@ class Reservation {
             die("Connection failed: " . $this->db->connect_error);
 
         }
+        $this->db->query("CREATE DATABASE IF NOT EXISTS $this->db");
+        $query = "CREATE TABLE IF NOT EXISTS seating (
+    	block INT PRIMARY KEY AUTO_INCREMENT,
+    	seat INT DEFAULT 0 CHECK (seat >= 0 AND seat <= 7)";
+    	$this->db->query($query);
+
     }
 
     public function displayMessages() {
@@ -76,7 +82,7 @@ public function reserveSeats($input) {
 
                 if($minToAdd==0){
                 	break;
-                }
+               }
                 echo "minimum value".$var1[1]."----".$minToAdd."<br>";
                 $updateQuery = "UPDATE seating SET seat = seat + $minToAdd WHERE block = $var1[0] limit 1";
                 $this->db->query($updateQuery);
