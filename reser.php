@@ -1,5 +1,5 @@
 <?php
-ini_set('memory_limit', '1024M');
+// earlier i was facing memory allocation problem so i use -> ini_set('memory_limit', '1024M');
 class Reservation {
     private $totalSeats = 80;
     private $totalRows = 13;
