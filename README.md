@@ -27,7 +27,7 @@ feel fit.<br>
 //Table Creation<br>
 "CREATE TABLE IF NOT EXISTS seating (
     	block INT(20) PRIMARY KEY AUTO_INCREMENT,
-    	seat INT(20) DEFAULT 0 not null)"
+    	seat INT(20) DEFAULT 0 not null)"<br>
 //using for loop create multiple data and delete it 
 "insert seating values()"
 <h2>How to run:</h2>
