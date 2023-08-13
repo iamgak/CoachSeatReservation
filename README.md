@@ -15,11 +15,11 @@ nearby seats are booked.<br>
 all the seats and their availability status through color or number or anything else that you may
 feel fit.<br>
 <h2>Technologies Used:</h2>
-1.PHP
-2.MySql
-3.HTML
-4.CSS
-5.javascript
+1.PHP<br>
+2.MySql<br>
+3.HTML<br>
+4.CSS<br>
+5.javascript<br>
 <h2> DATABASE:</h2>
 //Database creation<br>
 "CREATE DATABASE IF NOT EXISTS ".$dbname"
