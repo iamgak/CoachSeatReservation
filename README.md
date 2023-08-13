@@ -1,5 +1,5 @@
 # CoachSeatReservation
-# skill
+<h2>About the Project</h2>
 It's a Php-MySql script where PHP class-object does most of the display, reservation and checking/availability of seats.
 1. There are 80 seats in a coach of a train with only 7 seats in a row and last row of only 3
 seats. For simplicity, there is only one coach in this train.
@@ -14,4 +14,18 @@ How it should function?
 2. Output should be seats numbers that have been booked for the user along with the display of
 all the seats and their availability status through color or number or anything else that you may
 feel fit.
-
+<h2>Technologies Used:</h2>
+1.PHP
+2.MySql
+3.HTML
+4.CSS
+5.javascript
+<h2> DATABASE:</h2>
+//Database creation
+"CREATE DATABASE IF NOT EXISTS ".$dbname"
+//Table Creation
+"CREATE TABLE IF NOT EXISTS seating (
+    	block INT(20) PRIMARY KEY AUTO_INCREMENT,
+    	seat INT(20) DEFAULT 0 not null)"
+//using for loop create multiple data and delete it 
+"insert seating values()"
