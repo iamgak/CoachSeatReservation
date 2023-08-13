@@ -28,7 +28,7 @@ feel fit.<br>
 "CREATE TABLE IF NOT EXISTS seating (
     	block INT(20) PRIMARY KEY AUTO_INCREMENT,
     	seat INT(20) DEFAULT 0 not null)"<br>
-//using for loop create multiple data and delete it 
+//using for loop create multiple data and delete it <br>
 "insert seating values()"
 <h2>How to run:</h2>
 just run reser.php file on localhost it will work. nothing else needed.
