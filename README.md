@@ -31,4 +31,4 @@ feel fit.<br>
 //using for loop create multiple data and delete it 
 "insert seating values()"
 <h2>How to run:</h2>
-just run main/reser.php file on localhost it will work. nothing else needed.
+just run reser.php file on localhost it will work. nothing else needed.
