@@ -8,6 +8,7 @@ seats. For simplicity, there is only one coach in this train.<br>
 4. If seats are not available in one row then the booking should be done in such a way that the
 nearby seats are booked.<br>
 5. User can book as many tickets as s/he wants until the coach is full.<br>
+<h2>Input/Output Format:</h2>
 6. You don’t have to create login functionality for this application.How it should function?<br>
 1. Input required will only be the required number of seats. Example: 2 or 4 or 6 or 1 etc.<br>
 2. Output should be seats numbers that have been booked for the user along with the display of
@@ -28,3 +29,5 @@ feel fit.<br>
     	seat INT(20) DEFAULT 0 not null)"
 //using for loop create multiple data and delete it 
 "insert seating values()"
+<h2>How to run:</h2>
+just run main/reser.php file on localhost it will work. nothing else needed.
